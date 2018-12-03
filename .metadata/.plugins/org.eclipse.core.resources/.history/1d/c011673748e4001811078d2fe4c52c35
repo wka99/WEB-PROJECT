@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html" charset="EUC-KR">
+<title>전주 mypage</title>
+<style type="text/css">
+        div#wrapper{width:100%;min-height:300px;margin:0 auto;}
+	header{
+		    width:100%;
+                    height:50px;
+                    background-color:black;
+                    color:white;
+                   }
+        nav{float:left;
+            margin-top:10px;
+            background-color:#e9e9e9;
+            width:170px;
+            height:500px;}
+        #userImg{margin-left:43px;}
+        #usermenu{margin-left:10px;}
+        nav span{font-size:10px;}
+</style>
+</head>
+<body>
+	<header>
+		<h1>&nbsp;Jeonju</h1>
+	</header>
+    <nav>
+    	<br><br>
+    	<img id="userImg" src="user.png" width="80px" height="80px"></img>
+    	<br><p align="center">User1234</p>
+    	<img id="usermenu" src="paper.png" width="13px" height="13px"></img>
+    	<span>&nbsp;내가 쓴 글</span><br>
+    	<img id="usermenu" src="paper.png" width="13px" height="13px"></img>
+    	<span>&nbsp;내가 좋아요한 글</span><br>
+    	<img id="usermenu" src="paper.png" width="13px" height="13px"></img>
+    	<span>&nbsp;내가 스크랩한 글</span><br>
+    	<img id="usermenu" src="paper.png" width="13px" height="13px"></img>
+    	<span>&nbsp;내가 즐겨찾기한 지역</span>
+    	
+    </nav>
+</body>
+</html>
