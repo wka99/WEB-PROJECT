@@ -1,20 +1,20 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta content="text/html" charset="EUC-KR">
-<title>ÀüÁÖ mypage</title>
-<link rel="stylesheet" type="text/css" href="NewFile.css">
+<meta content="text/html" charset="utf-8">
+<title>ì „ì£¼ mypage</title>
+<link rel="stylesheet" type="text/css" href="css/NewFile.css">
 </head>
 <body>
 <div id="container">
- <jsp:include page="header.jsp" flush="false"/>
-    <jsp:include page="UserInfo.jsp" flush="false"/>
+ <jsp:include page="UserPage/header.jsp" flush="false"/>
+    <jsp:include page="UserPage/UserInfo.jsp" flush="false"/>
     <section class="Userback">
     	<div class="title">
-    		<img class="bigMenu" id="³»°¡ ÁÁ¾Æ¿äÇÑ ±Û" src="thumb-up-button.png" width="27px" height="27px"></img>
-    		<b><font size="5">&nbsp;³»°¡ ÁÁ¾Æ¿äÇÑ ±Û</font></b>
+    		<img class="bigMenu" id="ë‚´ê°€ ì¢‹ì•„ìš”í•œ ê¸€" src="images/thumb-up-button.png" width="27px" height="27px"></img>
+    		<b><font size="5">&nbsp;ë‚´ê°€ ì¢‹ì•„ìš”í•œ ê¸€</font></b>
     	</div>
     	<br><br>
     	<div class="searchwindow2">
@@ -27,34 +27,34 @@
     	<table id="user-like-table">
     		<tbody>
     		<tr>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>				
+				<td><img src="images/ds.jpg" width="200px" height="170px"></td>
+				<td><img src="images/ds.jpg" width="200px" height="170px"></td>
+				<td><img src="images/ds.jpg" width="200px" height="170px"></td>				
     		</tr>
     		<tr>
-    			<td height="10px">Á¦¸ñ1</td>
-				<td height="10px">Á¦¸ñ2</td>
-				<td height="10px">Á¦¸ñ3</td>			
+    			<td height="10px">ì œëª©1</td>
+				<td height="10px">ì œëª©2</td>
+				<td height="10px">ì œëª©3</td>			
     		</tr>
     		<tr>
-    			<td height="50px">Á¹¸³°í ½½ÇÁ´Ù ÀÎ»ýÀÌ¿© ÀÌ°÷Àº ³»¿ëÀÌ µé¾î°¥ ºÎºÐÀÌ´Ï¶ó</td>
-				<td height="50px">Á¹¸³°í ½½ÇÁ´Ù ÀÎ»ýÀÌ¿© ÀÌ°÷Àº ³»¿ëÀÌ µé¾î°¥ ºÎºÐÀÌ´Ï¶ó</td>
-				<td height="50px">Á¹¸³°í ½½ÇÁ´Ù ÀÎ»ýÀÌ¿© ÀÌ°÷Àº ³»¿ëÀÌ µé¾î°¥ ºÎºÐÀÌ´Ï¶ó</td>			
+    			<td height="50px">ì¡¸ë¦½ê³  ìŠ¬í”„ë‹¤ ì¸ìƒì´ì—¬ ì´ê³³ì€ ë‚´ìš©ì´ ë“¤ì–´ê°ˆ ë¶€ë¶„ì´ë‹ˆë¼</td>
+				<td height="50px">ì¡¸ë¦½ê³  ìŠ¬í”„ë‹¤ ì¸ìƒì´ì—¬ ì´ê³³ì€ ë‚´ìš©ì´ ë“¤ì–´ê°ˆ ë¶€ë¶„ì´ë‹ˆë¼</td>
+				<td height="50px">ì¡¸ë¦½ê³  ìŠ¬í”„ë‹¤ ì¸ìƒì´ì—¬ ì´ê³³ì€ ë‚´ìš©ì´ ë“¤ì–´ê°ˆ ë¶€ë¶„ì´ë‹ˆë¼</td>			
     		</tr>
     		<tr>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>				
+				<td><img src="images/ds.jpg" width="200px" height="170px"></td>
+				<td><img src="images/ds.jpg" width="200px" height="170px"></td>
+				<td><img src="images/ds.jpg" width="200px" height="170px"></td>				
     		</tr>
     		<tr>
-    			<td height="10px">Á¦¸ñ1</td>
-				<td height="10px">Á¦¸ñ2</td>
-				<td height="10px">Á¦¸ñ3</td>			
+    			<td height="10px">ì œëª©1</td>
+				<td height="10px">ì œëª©2</td>
+				<td height="10px">ì œëª©3</td>			
     		</tr>
     		<tr>
-    			<td height="50px">Á¹¸³°í ½½ÇÁ´Ù ÀÎ»ýÀÌ¿© ÀÌ°÷Àº ³»¿ëÀÌ µé¾î°¥ ºÎºÐÀÌ´Ï¶ó</td>
-				<td height="50px">Á¹¸³°í ½½ÇÁ´Ù ÀÎ»ýÀÌ¿© ÀÌ°÷Àº ³»¿ëÀÌ µé¾î°¥ ºÎºÐÀÌ´Ï¶ó</td>
-				<td height="50px">Á¹¸³°í ½½ÇÁ´Ù ÀÎ»ýÀÌ¿© ÀÌ°÷Àº ³»¿ëÀÌ µé¾î°¥ ºÎºÐÀÌ´Ï¶ó</td>			
+    			<td height="50px">ì¡¸ë¦½ê³  ìŠ¬í”„ë‹¤ ì¸ìƒì´ì—¬ ì´ê³³ì€ ë‚´ìš©ì´ ë“¤ì–´ê°ˆ ë¶€ë¶„ì´ë‹ˆë¼</td>
+				<td height="50px">ì¡¸ë¦½ê³  ìŠ¬í”„ë‹¤ ì¸ìƒì´ì—¬ ì´ê³³ì€ ë‚´ìš©ì´ ë“¤ì–´ê°ˆ ë¶€ë¶„ì´ë‹ˆë¼</td>
+				<td height="50px">ì¡¸ë¦½ê³  ìŠ¬í”„ë‹¤ ì¸ìƒì´ì—¬ ì´ê³³ì€ ë‚´ìš©ì´ ë“¤ì–´ê°ˆ ë¶€ë¶„ì´ë‹ˆë¼</td>			
     		</tr>
     		</tbody>
     	</table>

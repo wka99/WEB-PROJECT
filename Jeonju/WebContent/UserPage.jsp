@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta content="text/html" charset="EUC-KR">
+<meta content="text/html" charset="utf-8">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -13,20 +13,21 @@ $(document).ready(function(){
     });
 })
 </script>
-<title>юЭаж mypage</title>
-<link rel="stylesheet" type="text/css" href="NewFile.css">
+<title>Л═└Лё╪ mypage</title>
+<link rel="stylesheet" type="text/css" href="css/NewFile.css">
+
 </head>
 <body>
 <div id="container">
-    <jsp:include page="header.jsp" flush="false"/>
-    <jsp:include page="UserInfo.jsp" flush="false"/>
+    <jsp:include page="UserPage/header.jsp" flush="false"/>
+    <jsp:include page="UserPage/UserInfo.jsp" flush="false"/>
     <section class="Userback">
     	<div class="title">
-    		<img class="bigMenu" id="Ё╩╟║ ╬╢ ╠ш" src="paper.png" width="27px" height="27px"></img>
-    		<b><font size="5">&nbsp;Ё╩╟║ ╬╢ ╠ш</font></b>
+    		<img class="bigMenu" id="К┌╢Й╟─ Л⌠╢ Й╦─" src="images/paper.png" width="27px" height="27px"></img>
+    		<b><font size="5">&nbsp;К┌╢Й╟─ Л⌠╢ Й╦─</font></b>
     	</div>
     	<div align="right">
-    		<button class="btn-2" onClick="location.href='UploadPage.jsp'">╩У╥н©Н ╠ш╬╡╠Б</button>
+    		<button class="btn-2" onClick="location.href='UploadPage.jsp'">Л┐┬К║°Л ╢ Й╦─Л⌠╟Й╦╟</button>
     	</div>
     	<br>
     	<div class="searchwindow">
@@ -41,21 +42,21 @@ $(document).ready(function(){
     		<tr>
 				<td><div class="table_content">
 					<div class="userID" align="left" style="font-size:13px;">User1234</div><br>
-					<img src="ds.jpg" width="200px" height="170px"><br>
-					<div class="title">а╕╦Яют╢о╢ы</div><br>
-					<div class="content">╦Я╣╣ ╬фга╟М а╧╥а©Д ©ю╢ц гь╪╜ db╥н ©╛╟А╠НаЖ╢б го╟М ╫м╢ы.....</div>
+					<img src="images/ds.jpg" width="200px" height="170px"><br>
+					<div class="title">Л═°К╙╘Л·┘К▀┬К▀╓</div><br>
+					<div class="content">К╙╘К▐└ Л∙└М■└ЙЁ═ Л║╦К═╓Л ■ Л≤╓К┼≤ М∙╢Л└° dbК║° Л≈╟Й╡╟Й╧▄Л╖─К┼■ М∙≤ЙЁ═ Л▀╤К▀╓.....</div>
 				</div></td>								
     			<td><div class="table_content">
 					<div class="userID" align="left" style="font-size:13px;">User1234</div><br>
-					<img src="ds.jpg" width="200px" height="170px"><br>
-					<div class="title">а╕╦Яют╢о╢ы</div><br>
-					<div class="content">╦Я╣╣ ╬фга╟М а╧╥а©Д ©ю╢ц гь╪╜ db╥н ©╛╟А╠НаЖ╢б го╟М ╫м╢ы.....2222222222</div>
+					<img src="images/ds.jpg" width="200px" height="170px"><br>
+					<div class="title">Л═°К╙╘Л·┘К▀┬К▀╓</div><br>
+					<div class="content">К╙╘К▐└ Л∙└М■└ЙЁ═ Л║╦К═╓Л ■ Л≤╓К┼≤ М∙╢Л└° dbК║° Л≈╟Й╡╟Й╧▄Л╖─К┼■ М∙≤ЙЁ═ Л▀╤К▀╓.....2222222222</div>
 				</div></td>	
 				<td><div class="table_content">
 					<div class="userID" align="left" style="font-size:13px;">User1234</div><br>
-					<img src="ds.jpg" width="200px" height="170px"><br>
-					<div class="title">а╕╦Яют╢о╢ы</div><br>
-					<div class="content">╦Я╣╣ ╬фга╟М а╧╥а©Д ©ю╢ц гь╪╜ db╥н ©╛╟А╠НаЖ╢б го╟М ╫м╢ы.....333333333333333333333333</div>
+					<img src="images/ds.jpg" width="200px" height="170px"><br>
+					<div class="title">Л═°К╙╘Л·┘К▀┬К▀╓</div><br>
+					<div class="content">К╙╘К▐└ Л∙└М■└ЙЁ═ Л║╦К═╓Л ■ Л≤╓К┼≤ М∙╢Л└° dbК║° Л≈╟Й╡╟Й╧▄Л╖─К┼■ М∙≤ЙЁ═ Л▀╤К▀╓.....333333333333333333333333</div>
 				</div></td>	
     		</tr>
     		

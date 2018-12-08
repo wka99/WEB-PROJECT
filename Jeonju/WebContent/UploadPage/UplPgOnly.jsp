@@ -1,24 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta content="text/html" charset="utf-8">
 <title>전주 mypage</title>
-<link rel="stylesheet" type="text/css" href="uploadPage.css">
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="uploadPage_js.js"></script>
-
+<link rel="stylesheet" type="text/css" href="css/uploadPage.css">
 </head>
 <body>
-<div id="wrapper">
-    <jsp:include page="header.jsp" flush="false"/>
-    <jsp:include page="UserInfo.jsp" flush="false"/>
-    <form action="upload.jsp" method="post">
-    <section>
-        <img id="새로운 글쓰기" src="writing.png" width="40px" height="40px">&nbsp&nbsp새로운 글쓰기</img>
+<form action="UploadPage/upload.jsp" method="post">
+    <img id="새로운 글쓰기" src="images/writing.png" width="40px" height="40px">&nbsp&nbsp새로운 글쓰기</img>
         <div class="ALL_wrap">
                 <div class="upload_wrap">
                     <div id="photo-zone">
-                        <img id="box" src="X-box.png">
+                        <img id="box" src="images/X-box.png">
                         <input type="hidden" id="box1" name="box_all" value="" src="" display="none">
                         <input type="hidden" id="box2" name="box_all" value="" src="" display="none">
                         <input type="hidden" id="box3" name="box_all" value="" src="" display="none">
@@ -62,7 +57,7 @@
                 </div>
                 <div class="canvas_wrap" >
                     <div id=canvas_head_wrap>
-                        <label for="Uploading"><img src="picture.png"></label>
+                        <label for="Uploading"><img src="images/picture.png"></label>
                         <input type="file" id="Uploading">
                     </div>
                     <div id="title_wrapper">
@@ -76,8 +71,6 @@
                     <button id="submittt">업로드!</button>
                 </div>
         </div>
-    </section>
-    </form>
-</div>
+        </form>
 </body>
 </html>
