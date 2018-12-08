@@ -1,8 +1,7 @@
-INDEX VERSION 1.4+C:\Users\yooso\Desktop\전주시&웹프로젝트\이클립스\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3731920205.index
-4190042975.index
-3563300702.index
-210782774.index
+INDEX VERSION 1.4+C:\Users\yooso\Desktop\Web\이클립스\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+96523273.index
+3786038779.index
 410618475.index
-743302890.index
 457769468.index
+1170024952.index
+2295425714.index

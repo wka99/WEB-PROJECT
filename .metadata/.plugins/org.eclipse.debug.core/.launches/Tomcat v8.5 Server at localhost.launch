@@ -8,6 +8,6 @@
     <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre-9.0.4"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="start"/>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dcatalina.base=&quot;C:\Users\yooso\Desktop\전주시&amp;웹프로젝트\이클립스\.metadata\.plugins\org.eclipse.wst.server.core\tmp0&quot; -Dcatalina.home=&quot;C:\apache-tomcat-8.5.34-windows-x64\apache-tomcat-8.5.34&quot; -Dwtp.deploy=&quot;C:\Users\yooso\Desktop\전주시&amp;웹프로젝트\이클립스\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps&quot;"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dcatalina.base=&quot;C:\Users\yooso\Desktop\Web\이클립스\.metadata\.plugins\org.eclipse.wst.server.core\tmp0&quot; -Dcatalina.home=&quot;C:\apache-tomcat-8.5.34-windows-x64\apache-tomcat-8.5.34&quot; -Dwtp.deploy=&quot;C:\Users\yooso\Desktop\Web\이클립스\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps&quot;"/>
     <stringAttribute key="server-id" value="Tomcat v8.5 Server at localhost"/>
 </launchConfiguration>
