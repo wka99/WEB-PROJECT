@@ -11,7 +11,7 @@
 <div id="container">
  <jsp:include page="header.jsp" flush="false"/>
     <jsp:include page="UserInfo.jsp" flush="false"/>
-    <section>
+    <section class="Userback">
     	<div class="title">
     		<img class="bigMenu" id="내가 스크랩한 글" src="bookmark-ribbon.png" width="27px" height="27px"></img>
     		<b><font size="5">&nbsp;내가 스크랩한 글</font></b>

@@ -18,16 +18,15 @@ $(document).ready(function(){
 </head>
 <body>
 <div id="container">
-	
     <jsp:include page="header.jsp" flush="false"/>
     <jsp:include page="UserInfo.jsp" flush="false"/>
-    <section>
+    <section class="Userback">
     	<div class="title">
     		<img class="bigMenu" id="내가 쓴 글" src="paper.png" width="27px" height="27px"></img>
     		<b><font size="5">&nbsp;내가 쓴 글</font></b>
     	</div>
     	<div align="right">
-    		<button class="btn-2" onClick="location.href='##sss'">새로운 글쓰기</button>
+    		<button class="btn-2" onClick="location.href='UploadPage.jsp'">새로운 글쓰기</button>
     	</div>
     	<br>
     	<div class="searchwindow">
@@ -40,35 +39,26 @@ $(document).ready(function(){
     	<table id="user-table">
     		<tbody>
     		<tr>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>				
+				<td><div class="table_content">
+					<div class="userID" align="left" style="font-size:13px;">User1234</div><br>
+					<img src="ds.jpg" width="200px" height="170px"><br>
+					<div class="title">제목입니다</div><br>
+					<div class="content">목도 아프고 졸려요 오늘 해서 db로 연결까지는 하고 싶다.....</div>
+				</div></td>								
+    			<td><div class="table_content">
+					<div class="userID" align="left" style="font-size:13px;">User1234</div><br>
+					<img src="ds.jpg" width="200px" height="170px"><br>
+					<div class="title">제목입니다</div><br>
+					<div class="content">목도 아프고 졸려요 오늘 해서 db로 연결까지는 하고 싶다.....2222222222</div>
+				</div></td>	
+				<td><div class="table_content">
+					<div class="userID" align="left" style="font-size:13px;">User1234</div><br>
+					<img src="ds.jpg" width="200px" height="170px"><br>
+					<div class="title">제목입니다</div><br>
+					<div class="content">목도 아프고 졸려요 오늘 해서 db로 연결까지는 하고 싶다.....333333333333333333333333</div>
+				</div></td>	
     		</tr>
-    		<tr>
-    			<td height="10px">제목1</td>
-				<td height="10px">제목2</td>
-				<td height="10px">제목3</td>			
-    		</tr>
-    		<tr>
-    			<td height="50px">졸립고 슬프다 인생이여 이곳은 내용이 들어갈 부분이니라</td>
-				<td height="50px">졸립고 슬프다 인생이여 이곳은 내용이 들어갈 부분이니라</td>
-				<td height="50px">졸립고 슬프다 인생이여 이곳은 내용이 들어갈 부분이니라</td>			
-    		</tr>
-    		<tr>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>
-				<td><img src="ds.jpg" width="200px" height="170px"></td>				
-    		</tr>
-    		<tr>
-    			<td height="10px">제목1</td>
-				<td height="10px">제목2</td>
-				<td height="10px">제목3</td>			
-    		</tr>
-    		<tr>
-    			<td height="50px">졸립고 슬프다 인생이여 이곳은 내용이 들어갈 부분이니라</td>
-				<td height="50px">졸립고 슬프다 인생이여 이곳은 내용이 들어갈 부분이니라</td>
-				<td height="50px">졸립고 슬프다 인생이여 이곳은 내용이 들어갈 부분이니라</td>			
-    		</tr>
+    		
     		</tbody>
     	</table>
     	</div>

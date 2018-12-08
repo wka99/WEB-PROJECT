@@ -11,7 +11,7 @@
 <div id="container">
  <jsp:include page="header.jsp" flush="false"/>
     <jsp:include page="UserInfo.jsp" flush="false"/>
-    <section>
+    <section class="Userback">
     	<div class="title">
     		<img class="bigMenu" id="내가 즐겨찾기한 지역" src="star.png" width="27px" height="27px"></img>
     		<b><font size="5">&nbsp;내가 즐겨찾기한 지역</font></b>

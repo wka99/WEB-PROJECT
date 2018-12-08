@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<nav>
+	<nav class="UserInfo">
     	<br><br>
     	<img id="userImg" src="user.png" width="80px" height="80px"></img>
     	<br><p align="center">User1234</p><br></a>
