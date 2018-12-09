@@ -5,7 +5,7 @@
 <head>
 <meta content="text/html" charset="EUC-KR">
 <title>전주 mypage</title>
-<link rel="stylesheet" type="text/css" href="NewFile.css">
+<link rel="stylesheet" type="text/css" href="NewFile1.css">
 </head>
 <body>
 <div id="container">
