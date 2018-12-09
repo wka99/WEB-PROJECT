@@ -1,5 +1,0 @@
-INDEX VERSION 1.131
-C:\Users\yooso\Desktop\Web\이클립스\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\457769468.index
-\Jeonju\src
-C:\Users\yooso\Desktop\Web\이클립스\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2523228104.index
-\유나\src

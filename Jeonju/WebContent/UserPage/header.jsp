@@ -1,20 +1,20 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="EUC-KR">
 <title>Insert title here</title>
 </head>
 <body>
 	<ul class="menubar">
 		<li class="h"><a class="title" href="##"><b>Jeonju</b></a></li>
-		<li class="h"><a class="h" href="UserPage.jsp">ë§ˆì´íŽ˜ì´ì§€</a>
+		<li class="h"><a class="h" href="UserPage.jsp">¸¶ÀÌÆäÀÌÁö</a>
 			<ul>
-				<li><a href="UserPage.jsp">ë‚´ê°€ ì“´ ê¸€</a></li>
-				<li><a href="UserPage2.jsp">ë‚´ê°€ ì¢‹ì•„ìš”í•œ ê¸€</a></li>
-				<li><a href="UserPage3.jsp">ë‚´ê°€ ìŠ¤í¬ëž©í•œ ê¸€</a></li>
-				<li><a href="UserPage4.jsp">ë‚´ê°€ ì¦ê²¨ì°¾ê¸°í•œ ê¸€</a></li>
+				<li><a href="UserPage.jsp">³»°¡ ¾´ ±Û</a></li>
+				<li><a href="UserPage2.jsp">³»°¡ ÁÁ¾Æ¿äÇÑ ±Û</a></li>
+				<li><a href="UserPage3.jsp">³»°¡ ½ºÅ©·¦ÇÑ ±Û</a></li>
+				<li><a href="UserPage4.jsp">³»°¡ Áñ°ÜÃ£±âÇÑ ±Û</a></li>
 			</ul>
 		</li>
 		<li class="h"><a class="h" href="##">All about Jeonju</a></li>

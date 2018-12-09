@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%@page import="java.sql.*" %>
@@ -7,14 +6,10 @@
 <jsp:useBean id="pb" class="bean.PostDatabasebean"/>
 <jsp:setProperty name="pb" property="*"/>
 
-=======
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
->>>>>>> a760cce7f45d37437528106806f86dcf528bba89
 <!DOCTYPE html>
 <html>
 <head>
-<meta content="text/html" charset="utf-8">
+<meta content="text/html" charset="EUC-KR">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
 <%
@@ -64,14 +59,8 @@ $(document).ready(function(){
     
 })
 </script>
-<<<<<<< HEAD
 <title>���� mypage</title>
-<link rel="stylesheet" type="text/css" href="NewFile1.css">
-=======
-<title>전주 mypage</title>
 <link rel="stylesheet" type="text/css" href="css/NewFile.css">
-
->>>>>>> a760cce7f45d37437528106806f86dcf528bba89
 </head>
 <body>
 <div id="container">
@@ -79,11 +68,11 @@ $(document).ready(function(){
     <jsp:include page="UserPage/UserInfo.jsp" flush="false"/>
     <section class="Userback">
     	<div class="title">
-    		<img class="bigMenu" id="내가 쓴 글" src="images/paper.png" width="27px" height="27px"></img>
-    		<b><font size="5">&nbsp;내가 쓴 글</font></b>
+    		<img class="bigMenu" id="���� �� ��" src="images/paper.png" width="27px" height="27px"></img>
+    		<b><font size="5">&nbsp;���� �� ��</font></b>
     	</div>
     	<div align="right">
-    		<button class="btn-2" onClick="location.href='UploadPage.jsp'">새로운 글쓰기</button>
+    		<button class="btn-2" onClick="location.href='UploadPage.jsp'">���ο� �۾���</button>
     	</div>
     	<br>
     	<div class="searchwindow">
@@ -114,13 +103,12 @@ $(document).ready(function(){
     				if (count%3!=1&&count!=1){
     		%>
 				<td><div class="table_content">
-<<<<<<< HEAD
 					<div class="userID" align="left" style="font-size:14px;"><b><%=rs.getString("id") %></b></div>
-					<img src="ds.jpg" width="240px" height="180px"><br>
+					<img src="images/ds.jpg" width="240px" height="180px"><br>
 					<div class="title"style="font-size:13px;"><%=rs.getString("title") %></div>
 					<div class="buttons">
-					<button class="like" id="<%=rs.getString("number") %>" name="like" ><img width="15px" src="thumb-up-button.png"></button>
-					<button class="star" id="<%=rs.getString("number") %>" name="star"><img width="15px" src="star.png"></button>
+					<button class="like" id="<%=rs.getString("number") %>" name="like" ><img width="15px" src="images/thumb-up-button.png"></button>
+					<button class="star" id="<%=rs.getString("number") %>" name="star"><img width="15px" src="images/star.png"></button>
 					</div>
 					<div class="content"style="font-size:13px;">
 					<%
@@ -138,11 +126,11 @@ $(document).ready(function(){
     				<tr>
 	    				<td><div class="table_content">
 						<div class="userID" align="left" style="font-size:14px;"><b><%=rs.getString("id") %></b></div>
-						<img src="ds.jpg" width="240px" height="180px"><br>
+						<img src="images/ds.jpg" width="240px" height="180px"><br>
 						<div class="title"style="font-size:13px;"><%=rs.getString("title") %></div>
 						<div class="buttons" id="<%=rs.getString("id") %>">
-						<button id="<%=rs.getString("number") %>" class="like" name="like"><img width="15px" src="thumb-up-button.png"></button>
-						<button id="<%=rs.getString("number") %>" class="star" name="star"><img width="15px" src="star.png"></button>
+						<button id="<%=rs.getString("number") %>" class="like" name="like"><img width="15px" src="images/thumb-up-button.png"></button>
+						<button id="<%=rs.getString("number") %>" class="star" name="star"><img width="15px" src="images/star.png"></button>
 						</div>
 						<div class="content" style="font-size:13px;">
 						<%
@@ -158,27 +146,6 @@ $(document).ready(function(){
     			}
     			%>
     			</tr>
-=======
-					<div class="userID" align="left" style="font-size:13px;">User1234</div><br>
-					<img src="images/ds.jpg" width="200px" height="170px"><br>
-					<div class="title">제목입니다</div><br>
-					<div class="content">목도 아프고 졸려요 오늘 해서 db로 연결까지는 하고 싶다.....</div>
-				</div></td>								
-    			<td><div class="table_content">
-					<div class="userID" align="left" style="font-size:13px;">User1234</div><br>
-					<img src="images/ds.jpg" width="200px" height="170px"><br>
-					<div class="title">제목입니다</div><br>
-					<div class="content">목도 아프고 졸려요 오늘 해서 db로 연결까지는 하고 싶다.....2222222222</div>
-				</div></td>	
-				<td><div class="table_content">
-					<div class="userID" align="left" style="font-size:13px;">User1234</div><br>
-					<img src="images/ds.jpg" width="200px" height="170px"><br>
-					<div class="title">제목입니다</div><br>
-					<div class="content">목도 아프고 졸려요 오늘 해서 db로 연결까지는 하고 싶다.....333333333333333333333333</div>
-				</div></td>	
-    		</tr>
-    		
->>>>>>> a760cce7f45d37437528106806f86dcf528bba89
     		</tbody>
     	</table>
     	</div>
