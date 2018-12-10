@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta content="text/html" charset="EUC-KR">
-<title>ÀüÁÖ mypage</title>
+<meta content="text/html" charset="utf-8">
+<title>ì „ì£¼ mypage</title>
 <link rel="stylesheet" type="text/css" href="css/NewFile.css">
 </head>
 <body>
@@ -13,8 +13,8 @@
     <jsp:include page="UserPage/UserInfo.jsp" flush="false"/>
     <section class="Userback">
     	<div class="title">
-    		<img class="bigMenu" id="³»°¡ ½ºÅ©·¦ÇÑ ±Û" src="images/bookmark-ribbon.png" width="27px" height="27px"></img>
-    		<b><font size="5">&nbsp;³»°¡ ½ºÅ©·¦ÇÑ ±Û</font></b>
+    		<img class="bigMenu" id="ë‚´ê°€ ìŠ¤í¬ë©í•œ ê¸€" src="images/bookmark-ribbon.png" width="27px" height="27px"></img>
+    		<b><font size="5">&nbsp;ë‚´ê°€ ìŠ¤í¬ë©í•œ ê¸€</font></b>
     	</div>
     	<div class="scrap_posts">
     	

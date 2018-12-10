@@ -53,7 +53,7 @@
 
 
 <!--올 어바웃 전주-->
-<a href=""><font color="white" size="4">All About JeonJu</font></a>
+<a href="AajPage.jsp"><font color="white" size="4">All About JeonJu</font></a>
 </center>
 </div>
 

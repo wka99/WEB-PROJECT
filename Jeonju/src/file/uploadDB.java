@@ -17,7 +17,7 @@ public class uploadDB {
 		}
 	}
 	public int upload(String id,String title,String content,String location,String living,String [] pictureNames) {
-		String SQL="INSERT INTO uploaddb (id,title,content,location,living,picture1,picture2,picture3,picture4,picture5) "
+		String SQL="INSERT INTO post (id,title,content,location,living,picture1,picture2,picture3,picture4,picture5) "
 				+ "VALUES (?,?,?,?,?,?,?,?,?,?)";
 		try {
 			PreparedStatement pstmt =conn.prepareStatement(SQL);

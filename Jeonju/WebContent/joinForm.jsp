@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
 <title>Insert title here</title>
@@ -18,11 +18,11 @@
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
 	</button>
-	<a class="navbar-brand" href="test.jsp">GAMJEON</a>
+	<a class="navbar-brand" href="MainPage.jsp">GAMJEON</a>
 	</div>
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	<ul class="nav navbar-nav">
-	<li><a href="test.jsp">메인</a></li>
+	<li><a href="MainPage.jsp">메인</a></li>
 	<!-- <li><a href="bbs.jsp">게시판</a></li> -->
 	</ul>
 	<ul class="nav navbar-nav navbar-right">

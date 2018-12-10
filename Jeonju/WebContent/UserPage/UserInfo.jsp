@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="utf-8">
 <title>Insert title here</title>
 </head>
 <body>
@@ -13,13 +13,13 @@
     	<br><p align="center">User1234</p><br></a>
 	<div class="menu">
     	<img id="usermenuimg" src="images/paper.png"></img>
-    	<a href="UserPage.jsp"><span>&nbsp;³»°¡ ¾´ ±Û</span><br></a>
+    	<a href="UserPage.jsp"><span>&nbsp;ë‚´ê°€ ì“´ ê¸€</span><br></a>
     	<img id="usermenuimg" src="images/thumb-up-button.png"></img>
-    	<a href="UserPage2.jsp"><span>&nbsp;³»°¡ ÁÁ¾Æ¿äÇÑ ±Û</span><br></a>
+    	<a href="UserPage2.jsp"><span>&nbsp;ë‚´ê°€ ì¢‹ì•„ìš”í•œ ê¸€</span><br></a>
     	<img id="usermenuimg" src="images/bookmark-ribbon.png"></img>
-    	<a href="UserPage3.jsp"><span>&nbsp;³»°¡ ½ºÅ©·¦ÇÑ ±Û</span><br></a>
+    	<a href="UserPage3.jsp"><span>&nbsp;ë‚´ê°€ ìŠ¤í¬ëž©í•œ ê¸€</span><br></a>
     	<img id="usermenuimg" src="images/star.png"></img>
-    	<a href="UserPage4.jsp"><span>&nbsp;³»°¡ Áñ°ÜÃ£±âÇÑ Áö¿ª</span></a>
+    	<a href="UserPage4.jsp"><span>&nbsp;ë‚´ê°€ ì¦ê²¨ì°¾ê¸°í•œ ì§€ì—­</span></a>
 	</div>
     </nav>
 </body>

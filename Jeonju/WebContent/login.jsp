@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset="EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
 <title>Insert title here</title>
@@ -22,16 +22,16 @@
 	</div>
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	<ul class="nav navbar-nav">
-	<li><a href="test.jsp">¸ÞÀÎ</a></li>
-	<!-- <li><a href="bbs.jsp">°Ô½ÃÆÇ</a></li>-->
+	<li><a href="test.jsp">ë©”ì¸</a></li>
+	<!-- <li><a href="bbs.jsp">ê²Œì‹œíŒ</a></li>-->
 	</ul>
 	<ul class="nav navbar-nav navbar-right">
 	<li class="dropdown">
 	<a href="#" class="dropdown-toggle"
 	data-toggle="dropdown" role="button" aria-haspopup="true"
-	aria-expanded="false">Á¢¼ÓÇÏ±â<span class="caret"></span></a>
+	aria-expanded="false">ì ‘ì†í•˜ê¸°<span class="caret"></span></a>
 	<ul class="dropdown-menu">
-	<li class="active"><a href="login.jsp">·Î±×ÀÎ</a></li>
+	<li class="active"><a href="login.jsp">ë¡œê·¸ì¸</a></li>
 	</ul>
 	</li>
 	</ul>
@@ -46,14 +46,14 @@
 <form method="post" action="LoginPage/loginAction.jsp">
 <fieldset>
 	<legend><center>LOGIN!</center></legend>
-	<input type="email" name="userEmail" placeholder="ÀÌ¸ÞÀÏÀ» ÀÔ·ÂÇÏ¼¼¿ä.">
+	<input type="email" name="userEmail" placeholder="ì´ë©”ì¼ì„ ìž…ë ¥í•˜ì„¸ìš”.">
 	<br><br>
-	<input type="password" name="userPassword" placeholder="ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä." maxlength="20">
+	<input type="password" name="userPassword" placeholder="ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”." maxlength="20">
         <br><br>
         <button type="submit"> <a href = "test.jsp">login</a></button>
          <br>
          <br>
-              °èÁ¤ÀÌ ¾øÀ¸½Å°¡¿ä?<a href="joinForm.jsp">&nbsp È¸¿ø°¡ÀÔ</a>
+              ê³„ì •ì´ ì—†ìœ¼ì‹ ê°€ìš”?<a href="joinForm.jsp">&nbsp íšŒì›ê°€ìž…</a>
 	</fieldset>
 	</form>
 	</div>

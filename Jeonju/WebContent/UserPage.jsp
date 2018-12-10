@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%@page import="java.sql.*" %>
-<%request.setCharacterEncoding("euc-kr");%>
+<%request.setCharacterEncoding("utf-8");%>
 <%@page import="bean.postDAO" %>
 <jsp:useBean id="pb" class="bean.PostDatabasebean"/>
 <jsp:setProperty name="pb" property="*"/>
@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta content="text/html" charset="EUC-KR">
+<meta content="text/html" charset="utf-8">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
 <%
@@ -22,9 +22,9 @@
 %>
 
 $(document).ready(function(){
-	<%//»ìÂ¦ ²Ä¼ö¸¦ ¾´ ¹öÆ° ±¸Çö 
-	 //ÀÚ¹Ù½ºÅ©¸³Æ®ÀÇ º¯¼ö°¡ jsp·Î Àü´ÞÀÌ ¾ÈµÇ¾î¼­ ¹öÆ° Å¬¸¯ÇÏ¸é ÆäÀÌÁö¿¡ query Àü´ÞÇØ¼­
-	//ÆäÀÌÁö reload, ´Ù¸¥ ¹æ¹ýÀÌ ÀÖ´Ù¸é °íÃÄº¾½Ã´Ù +sessionÀ» ½á¼­ ÇÑ¹ø ¹öÆ°À» ´©¸£¸é ´Ù½Ã ¸ø´©¸£°Ô ÇÒ ¼ö ÀÖÀ» µí ÇÕ´Ï´Ù....
+	<%//ì‚´ì§ ê¼¼ìˆ˜ë¥¼ ì“´ ë²„íŠ¼ êµ¬í˜„ 
+	 //ìžë°”ìŠ¤í¬ë¦½íŠ¸ì˜ ë³€ìˆ˜ê°€ jspë¡œ ì „ë‹¬ì´ ì•ˆë˜ì–´ì„œ ë²„íŠ¼ í´ë¦­í•˜ë©´ íŽ˜ì´ì§€ì— query ì „ë‹¬í•´ì„œ
+	//íŽ˜ì´ì§€ reload, ë‹¤ë¥¸ ë°©ë²•ì´ ìžˆë‹¤ë©´ ê³ ì³ë´…ì‹œë‹¤ +sessionì„ ì¨ì„œ í•œë²ˆ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ë‹¤ì‹œ ëª»ëˆ„ë¥´ê²Œ í•  ìˆ˜ ìžˆì„ ë“¯ í•©ë‹ˆë‹¤....
 		number_like=request.getParameter("number_like");
 		number_star=request.getParameter("number_star");
 		if (number_like!=null){
@@ -59,7 +59,7 @@ $(document).ready(function(){
     
 })
 </script>
-<title>ÀüÁÖ mypage</title>
+<title>ì „ì£¼ mypage</title>
 <link rel="stylesheet" type="text/css" href="css/NewFile.css">
 </head>
 <body>
@@ -68,11 +68,11 @@ $(document).ready(function(){
     <jsp:include page="UserPage/UserInfo.jsp" flush="false"/>
     <section class="Userback">
     	<div class="title">
-    		<img class="bigMenu" id="³»°¡ ¾´ ±Û" src="images/paper.png" width="27px" height="27px"></img>
-    		<b><font size="5">&nbsp;³»°¡ ¾´ ±Û</font></b>
+    		<img class="bigMenu" id="ë‚´ê°€ ì“´ ê¸€" src="images/paper.png" width="27px" height="27px"></img>
+    		<b><font size="5">&nbsp;ë‚´ê°€ ì“´ ê¸€</font></b>
     	</div>
     	<div align="right">
-    		<button class="btn-2" onClick="location.href='UploadPage.jsp'">»õ·Î¿î ±Û¾²±â</button>
+    		<button class="btn-2" onClick="location.href='UploadPage.jsp'">ìƒˆë¡œìš´ ê¸€ì“°ê¸°</button>
     	</div>
     	<br>
     	<div class="searchwindow">
@@ -87,8 +87,8 @@ $(document).ready(function(){
     		<tr>
     		<%
     			String search=request.getParameter("search");
-    			//³ªÁß¿¡ ¾ÆÀÌµð¿¡ ÇØ´çÇÏ´Â °Ô½Ã±Û¸¸ °¡Á®¿À±â À§ÇØ ¼¼¼ÇÀÇ ÇöÀç »ç¿ëÀÚÀÇ ¾ÆÀÌµð¸¦ È®ÀÎÇÏ°í ÀÌ¿Í ÀÏÄ¡ÇÏ´Â
-    			//°Ô½Ã±Û ¸¸À» °¡Á®¿Àµµ·Ï sql Á¶Á¤ÇÒ°Í!!
+    			//ë‚˜ì¤‘ì— ì•„ì´ë””ì— í•´ë‹¹í•˜ëŠ” ê²Œì‹œê¸€ë§Œ ê°€ì ¸ì˜¤ê¸° ìœ„í•´ ì„¸ì…˜ì˜ í˜„ìž¬ ì‚¬ìš©ìžì˜ ì•„ì´ë””ë¥¼ í™•ì¸í•˜ê³  ì´ì™€ ì¼ì¹˜í•˜ëŠ”
+    			//ê²Œì‹œê¸€ ë§Œì„ ê°€ì ¸ì˜¤ë„ë¡ sql ì¡°ì •í• ê²ƒ!!
     			//String id=(String)session.getAttribute("id");
     			int count=0;
     			ResultSet rs=null;
@@ -113,7 +113,7 @@ $(document).ready(function(){
 					<div class="content"style="font-size:13px;">
 					<%
 						String c=rs.getString("content");
-						if (c.length()>30)//30ÀÚ ÀÌ»óÀÌ¸é »ý·«µÇµµ·Ï
+						if (c.length()>30)//30ìž ì´ìƒì´ë©´ ìƒëžµë˜ë„ë¡
 							c=c.substring(0,30)+"...";
 						out.print(c);
 					%>
@@ -135,7 +135,7 @@ $(document).ready(function(){
 						<div class="content" style="font-size:13px;">
 						<%
 							String c=rs.getString("content"); 
-							if (c.length()>30)//30ÀÚ ÀÌ»óÀÌ¸é »ý·«µÇµµ·Ï
+							if (c.length()>30)//30ìž ì´ìƒì´ë©´ ìƒëžµë˜ë„ë¡
 								c=c.substring(0,30)+"...";
 							out.print(c);
 						%>
