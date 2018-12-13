@@ -50,7 +50,7 @@
 	<br><br>
 	<input type="password" name="userPassword" placeholder="비밀번호를 입력하세요." maxlength="20">
         <br><br>
-        <button type="submit"> <a href = "test.jsp">login</a></button>
+        <button type="submit"> <a href = "MainPage.jsp">login</a></button>
          <br>
          <br>
               계정이 없으신가요?<a href="joinForm.jsp">&nbsp 회원가입</a>

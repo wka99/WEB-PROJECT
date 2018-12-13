@@ -7,8 +7,8 @@ public class uploadDB {
 	private Connection conn;
 	public uploadDB() {
 		try {
-			String dbURL="jdbc:mysql://13.125.136.38/webbabies?";
-			String dbID="root";
+			String dbURL="jdbc:mysql://13.125.136.38:3306/webbabies?serverTimezone=UTC";
+			String dbID="eshock";
 			String dbPassword="dnflrkWkddldi";
 			Class.forName("com.mysql.jdbc.Driver");
 			conn=DriverManager.getConnection(dbURL,dbID,dbPassword);
