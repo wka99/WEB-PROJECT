@@ -13,9 +13,9 @@ private ResultSet rs;
 
 public UserDAO() {
 	try {
-		String dbURL="jdbc:mysql://localhost:3306/webbabies?serverTimezone=UTC";
+		String dbURL="jdbc:mysql://13.125.136.38/webbabies?";
 		String dbID="root";
-		String dbPassword="skatksgkrtk9218!";
+		String dbPassword="dnflrkWkddldi";
 		Class.forName("com.mysql.jdbc.Driver");
 		conn=DriverManager.getConnection(dbURL,dbID,dbPassword);
 	}

@@ -4,15 +4,15 @@ public class postDAO {
 	private Connection conn;
 	public postDAO() {
 		try {
-			String dbURL="jdbc:mysql://localhost:3306/webbabies?serverTimezone=UTC";
+			String dbURL="jdbc:mysql://13.125.136.38/dbmyadmin/webbabies?";
 			String dbID="root";
-			String dbPassword="skatksgkrtk9218!";
+			String dbPassword="dnflrkWkddldi";
 			Class.forName("com.mysql.jdbc.Driver");
 			conn=DriverManager.getConnection(dbURL,dbID,dbPassword);
 		}catch(Exception e) {
 			System.out.println("DB연동 오류입니다 : "+e.getMessage());
 		}
-	}
+	} 
 	public ResultSet getResult(String sql) {
 		ResultSet rs=null;
 		try {
