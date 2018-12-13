@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
+﻿<%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <%@page import="java.sql.*" %>
 <%request.setCharacterEncoding("utf-8");%>
@@ -22,7 +22,7 @@
 %>
 
 $(document).ready(function(){
-	<%//살짝 꼼수를 쓴 버튼 구현 
+	<%
 	 //자바스크립트의 변수가 jsp로 전달이 안되어서 버튼 클릭하면 페이지에 query 전달해서
 	//페이지 reload, 다른 방법이 있다면 고쳐봅시다 +session을 써서 한번 버튼을 누르면 다시 못누르게 할 수 있을 듯 합니다....
 		number_like=request.getParameter("number_like");
