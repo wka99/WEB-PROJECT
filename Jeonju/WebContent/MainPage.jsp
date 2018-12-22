@@ -70,10 +70,10 @@
  %>
  <div class="out">
  	<div class="login_list_common"><%=session.getAttribute("userName")%>님 </div>
- 	<div class="login_list_common">마이페이지</div>
- 	<div class="login_list_common">즐겨찾기</div>
- 	<div class="login_list_common">내가 쓴 글</div>
- 	<div class="login_list_common">게시글 쓰기</div>
+ 	<a href=""><div class="login_list_common">마이페이지</div></a><br>
+ 	<a href=""><div class="login_list_common">즐겨찾기</div></a><br>
+ 	<a href=""><div class="login_list_common">내가 쓴 글</div></a><br>
+ 	<a href=""><div class="login_list_common">게시글 쓰기</div></a><br>
  	<a href="logoutAction.jsp"><div class="login_list_common">로그아웃</div></a>
  </div>
  <%
@@ -83,8 +83,10 @@
 <!--검색창과 검색 아이콘-->
 <center>
 <div class="search">
-	<input id = "write" type="text" placeholder="검색어 "/>
-	<button type = "submit" id="enter"><img src="images/magnifier.png" id="ono"></button>
+	<form action=".jsp"method="get"><!-- 게시글 검색하면 나오는 페이지 -->
+		<input id = "write" type="text" name="search" placeholder="검색어 "/>
+		<button type = "submit" id="enter"><img src="images/magnifier.png" id="ono"></button>
+	</form>
 </div>
 </center>
 <div class="logo">
