@@ -1,24 +1,8 @@
-<<<<<<< HEAD
 INDEX VERSION 1.4+C:\Users\yooso\Desktop\Web\이클립스\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+410618475.index
 2295425714.index
-1170024952.index
-4170483838.index
 457769468.index
 96523273.index
-410618475.index
-1234842858.index
-280747100.index
+1170024952.index
 3786038779.index
-=======
-INDEX VERSION 1.4+C:\Users\정의정\Desktop\의정\2학년2학기\웹프로그래밍\프로젝트\OneMore\WEB-PROJECT\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1234842858.index
-941257549.index
-3001044558.index
-3947728342.index
-3268379944.index
-439956159.index
-4170483838.index
-410618475.index
-3982165701.index
-457769468.index
->>>>>>> 151bb5bb4f34caa160c88d942594d7e0385535b2
+280747100.index

@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@page import="java.sql.*" %>
+<%@page import="bean.postDAO" %>
+<jsp:useBean id="pb" class="bean.PostDatabasebean"/>
+<jsp:setProperty name="pb" property="*"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/NewFile.css">
+</head>
+<body>
+<%
+	String number=request.getParameter("number"); 
+	String sql="select * from post where number="+number;
+	ResultSet rs = pb.getResult(sql);
+%>
+<div id="container">
+ <jsp:include page="UserPage/header.jsp" flush="false"/>
+    <jsp:include page="UserPage/UserInfo.jsp" flush="false"/>
+    <section class="Userback">
+    	<div class="postContent">
+    		<table class="pc">
+    			<tr>
+    				<td>hkhjgjh</td>
+    			</tr>
+    		</table>
+    	</div>
+    </section>
+</div>
+</body>
+</html>
