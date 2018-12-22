@@ -11,7 +11,10 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+=======
+>>>>>>> 151bb5bb4f34caa160c88d942594d7e0385535b2
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

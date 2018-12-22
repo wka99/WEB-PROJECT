@@ -59,7 +59,7 @@
    </select>
    <br><br>
         <input type="text" name="userAge" placeholder="나이" maxlength="20"><br><br>
-        <button type="submit"> <a href = "test.jsp">회원가입</a></button>
+        <button type="submit"> <a href = "loginPage.jsp">회원가입</a></button>
          <br>
          <br>
 	</fieldset>

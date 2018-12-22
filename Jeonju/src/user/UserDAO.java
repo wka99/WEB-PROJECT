@@ -18,11 +18,19 @@ private ResultSet rs;
 
 public UserDAO() {
 	try {
+<<<<<<< HEAD
 		String dbURL="jdbc:mysql://13.125.136.38:3306/webbabies?serverTimezone=UTC"/*"jdbc:mysql://localhost:3306/BBS?serverTimezone=UTC"*/;
 		String dbEmail="eshock";
 		String dbPassword="dnflrkWkddldi";
 		Class.forName("com.mysql.jdbc.Driver")/*("com.mysql.cj.jdbc.Driver")*/; //드라이버에 접속할 수 있도록
 		conn=DriverManager.getConnection(dbURL, dbEmail, dbPassword);
+=======
+		String dbURL="jdbc:mysql://13.125.136.38:3306/webbabies?serverTimezone=UTC";
+		String dbID="eshock";
+		String dbPassword="dnflrkWkddldi";
+		Class.forName("com.mysql.jdbc.Driver");
+		conn=DriverManager.getConnection(dbURL,dbID,dbPassword);
+>>>>>>> 151bb5bb4f34caa160c88d942594d7e0385535b2
 	}
 	catch(Exception e) {
 		e.printStackTrace();

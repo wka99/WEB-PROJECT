@@ -1,0 +1,162 @@
+
+    .ALL_wrap{
+        width:1000px;
+        float:right;
+        position: absolute; left: 175px;
+        border:1px solid #e6e6e6;
+        padding:10px 10px 10px 10px;
+    }
+    .upload_wrap{
+        float:left;
+        width:29.5%;
+        height:500px;
+        margin: 0px 15px 0px 0px;
+        
+    }#photo-zone{
+        display: block;
+        height:200px;
+        
+    }#photo-zone #box{
+        width:100%;
+        height:100%;
+        border: 1px solid #444444;
+    }
+    #select-zone1{
+        text-align:center;
+        height:120px;
+    }
+    #select-zone{
+        display: block;
+        font-size:20px;
+    }
+    #select-zone table{
+        width:100%;
+        height:200px;
+        border: 1px solid #444444;
+        border-collapse:collapse;
+    }
+    #select-zone td{
+        border:1px solid #444444;
+        padding:20px;
+        color:#444444;        
+    }
+    #select-zone select{
+        font-size:20px;
+    }
+    .canvas_wrap{
+        display: inline-block;
+        width:67%;
+        height:500px;
+        background-color:#dcdcdc;
+        padding:10px;
+        
+    }.ALL_wrap .canvas_wrap #canvas_head_wrap{
+        display: block;
+        
+        padding:0;
+        height:50px;
+    }
+    .ALL_wrap #canvas_head_wrap img{
+        
+        height:100%;
+        padding:0;
+        margin:0;
+        border:0;
+    }
+    .ALL_wrap .canvas_wrap #canvas_head_wrap #Uploading
+    {
+        position:absolute;
+        display:none;
+    }.ALL_wrap .canvas_wrap #canvas_head_wrap label img
+    {
+        float:right;
+        padding:0;
+        margin:0;
+        border:0;
+    }
+    .ALL_wrap .canvas_wrap #title_wrapper{
+        display: block;
+        padding:0;
+        height:100px;
+    }
+    .ALL_wrap .canvas_wrap #title_wrapper input[type="text"]{
+        width:100%;
+        height:100%;
+        padding:0;
+        margin:0;
+        border:0;
+        font-size:15px;
+        font-family:"°íµñ";
+    }
+    .ALL_wrap .canvas_wrap #content_wrapper{
+        display: block;
+        height:310px;
+    }
+    .ALL_wrap .canvas_wrap #content_wrapper textArea{
+        resize:none;
+        width:100%;
+        height:100%;
+        line-height: 1.6;
+        padding:0;
+        margin:0;
+        border:0;
+        top:50%;
+        font-size:15px;
+        font-family:"°íµñ";
+    }
+    
+    .ALL_wrap .bottom_wrap{
+        height:50px;
+        padding:10px;
+    }
+
+    .ALL_wrap .bottom_wrap #submittt{
+        float:right
+    }
+    select {
+        width:150px;
+        height:40px;
+        font-size:15px;
+        color:#999;
+        border:none;
+        float:right;
+    }
+    button{
+        float:right;
+        background: #dcdcdc;
+        color:black;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+    }
+    button:hover{
+        background:#fff;
+        color: rgb(240, 64, 73);
+      }
+    button:before,button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background:rgb(240, 64, 73);
+        transition:400ms ease all;
+      }
+    button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+    button:hover:before,button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+    }
+    
+    

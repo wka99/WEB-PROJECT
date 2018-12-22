@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
+=======
+	<section name="BuildPathsPropertyPage">
+		<item value="2" key="pageIndex"/>
+	</section>
+>>>>>>> 151bb5bb4f34caa160c88d942594d7e0385535b2
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="completion_proposal_size">
