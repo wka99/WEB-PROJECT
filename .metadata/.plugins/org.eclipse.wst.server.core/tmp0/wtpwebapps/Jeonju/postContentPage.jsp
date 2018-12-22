@@ -35,6 +35,9 @@
     			<tr>
     				<td colspan="2" align="center"><hr><br><%=rs.getString("content")%></td>
     			</tr>
+    			<tr>
+    				<td colspan="2" align="center"><br><br><a href="AllContent.jsp">전체 게시글 보기</a></td>
+    			</tr>
     		</table>
  <%} %>
     	</div>

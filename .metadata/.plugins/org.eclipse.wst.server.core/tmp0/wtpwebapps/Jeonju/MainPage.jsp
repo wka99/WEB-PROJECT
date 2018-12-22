@@ -82,10 +82,12 @@
 <br>
 <!--검색창과 검색 아이콘-->
 <center>
+<form action="AllContent.jsp" method="get">
 <div class="search">
-	<input id = "write" type="text" placeholder="검색어 "/>
+	<input id = "write" type="text" name="search" placeholder="검색어 "/>
 	<button type = "submit" id="enter"><img src="images/magnifier.png" id="ono"></button>
 </div>
+</form>
 </center>
 <div class="logo">
 <center>

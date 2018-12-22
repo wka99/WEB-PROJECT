@@ -18,6 +18,7 @@
 			</ul>
 		</li>
 		<li class="h"><a class="h" href="AajPage.jsp">All about Jeonju</a></li>
+		<li class="h"><a class="h" href="AllContent.jsp">전체 글 보기</a>
 	</ul>
 </body>
 </html>

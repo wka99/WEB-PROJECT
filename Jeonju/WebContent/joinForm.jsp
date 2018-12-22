@@ -18,7 +18,7 @@
    <span class="icon-bar"></span>
    <span class="icon-bar"></span>
    </button>
-   <a class="navbar-brand" href="test.jsp">GAMJEON</a>
+   <a class="navbar-brand" href="MainPage.jsp">GAMJEON</a>
    </div>
    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
    <ul class="nav navbar-nav">
@@ -59,7 +59,7 @@
    </select>
    <br><br>
         <input type="text" name="userAge" placeholder="나이" maxlength="20"><br><br>
-        <button type="submit"> <a href = "test.jsp">회원가입</a></button>
+        <button type="submit"> <a href = "MainPage.jsp">회원가입</a></button>
          <br>
          <br>
    </fieldset>

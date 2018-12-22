@@ -1,4 +1,4 @@
-﻿<%@ page language="java" contentType="text/html; charset=utf-8"
+<%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <%@page import="java.sql.*" %>
 <%request.setCharacterEncoding("utf-8");%>
@@ -13,7 +13,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
 <%
-	String userEmail=(String)session.getAttribute("userEmail");
+	String search=request.getParameter("search");
 	postDAO pd = new postDAO();
 	int like=0;
 	int star=0;
@@ -23,6 +23,8 @@
 %>
 
 $(document).ready(function(){
+	if(search!=null)
+		$(".searchtext").val("<%=search%>");
 	<%
 		number_like=request.getParameter("number_like");
 		number_star=request.getParameter("number_star");
@@ -37,15 +39,15 @@ $(document).ready(function(){
 	%>
     $("#searchbutton").click(function(event){
     	var keyword=$(".searchtext").val();
-    	window.location.href=encodeURI("UserPage.jsp?search="+keyword);
+    	window.location.href=encodeURI("AllContent.jsp?search="+keyword);
     });
     $('.like').click(function(){
     	var num=$(this).attr("id");
-    	window.location.href=encodeURI("UserPage.jsp?number_like="+num);
+    	window.location.href=encodeURI("AllContent.jsp?number_like="+num+"&search="+"<%=search%>");
     });
     $('.star').click(function(){
     	var num=$(this).attr("id");
-    	window.location.href=encodeURI("UserPage.jsp?number_star="+num);
+    	window.location.href=encodeURI("AllContent.jsp?number_star="+num+"&search="+"<%=search%>");
     });
     
 })
@@ -59,8 +61,8 @@ $(document).ready(function(){
     <jsp:include page="UserPage/UserInfo.jsp" flush="false"/>
     <section class="Userback">
     	<div class="title">
-    		<img class="bigMenu" id="내가 쓴 글" src="images/paper.png" width="27px" height="27px"></img>
-    		<b><font size="5">&nbsp;내가 쓴 글</font></b>
+    		<br><br>
+    		<b><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;전체 게시글</font></b>
     	</div>
     	<div align="right">
     		<button class="btn-2" onClick="location.href='UploadPage.jsp'">새로운 글쓰기</button>
@@ -77,16 +79,13 @@ $(document).ready(function(){
     		<tbody>
     		<tr>
     		<%
-    			String search=request.getParameter("search");
-    			//나중에 아이디에 해당하는 게시글만 가져오기 위해 세션의 현재 사용자의 아이디를 확인하고 이와 일치하는
-    			//게시글 만을 가져오도록 sql 조정할것!!
     			int count=0;
     			ResultSet rs=null;
     			String sql="";
     			if (search==null)
-    				sql="select * from post where id='"+session.getAttribute("userName")+"'";
+    				sql="select * from post";
     			else
-    				sql="select * from post where (content like '%"+search+"%' or title like'%"+search+"%') and id='"+session.getAttribute("userName")+"'";
+    				sql="select * from post where (content like '%"+search+"%' or title like'%"+search+"%')";
     			rs=pd.getResult(sql);
     			while(rs.next()){
     				count++;

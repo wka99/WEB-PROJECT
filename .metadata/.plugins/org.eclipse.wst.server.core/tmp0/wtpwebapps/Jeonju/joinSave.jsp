@@ -40,6 +40,8 @@ if(user.getUserAge()==null || user.getUserPassword()==null||user.getUserName()==
    }
    else{ //회원가입이 된 경우
       session.setAttribute("userEmail", user.getUserEmail());
+   	  String userName=userDAO.findName(user.getUserEmail());
+   	  session.setAttribute("userName",userName);
       PrintWriter script=response.getWriter();
       script.println("<script>");
       script.println("location.href='MainPage.jsp'");

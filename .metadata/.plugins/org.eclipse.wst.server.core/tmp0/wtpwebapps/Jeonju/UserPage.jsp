@@ -13,6 +13,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
 <%
+	String userEmail=(String)session.getAttribute("userEmail");
 	postDAO pd = new postDAO();
 	int like=0;
 	int star=0;
@@ -23,8 +24,6 @@
 
 $(document).ready(function(){
 	<%
-	 //자바스크립트의 변수가 jsp로 전달이 안되어서 버튼 클릭하면 페이지에 query 전달해서
-	//페이지 reload, 다른 방법이 있다면 고쳐봅시다 +session을 써서 한번 버튼을 누르면 다시 못누르게 할 수 있을 듯 합니다....
 		number_like=request.getParameter("number_like");
 		number_star=request.getParameter("number_star");
 		if (number_like!=null){
@@ -43,18 +42,10 @@ $(document).ready(function(){
     $('.like').click(function(){
     	var num=$(this).attr("id");
     	window.location.href=encodeURI("UserPage.jsp?number_like="+num);
-    	<%
-		sql2="";
-		like+=1;
-		%>
     });
     $('.star').click(function(){
     	var num=$(this).attr("id");
     	window.location.href=encodeURI("UserPage.jsp?number_star="+num);
-    	<%
-		sql2="";
-		star+=1;
-		%>
     });
     
 })
@@ -107,7 +98,9 @@ $(document).ready(function(){
 					<div class="title"style="font-size:13px;"><a href="postContentPage.jsp?number=<%=rs.getString("number")%>"><%=rs.getString("title") %></a></div>
 					<div class="buttons">
 					<button class="like" id="<%=rs.getString("number") %>" name="like" ><img width="15px" src="images/thumb-up-button.png"></button>
+					<%=rs.getString("likes") %>
 					<button class="star" id="<%=rs.getString("number") %>" name="star"><img width="15px" src="images/star.png"></button>
+					<%=rs.getString("bookmarks") %>
 					</div>
 					<div class="content"style="font-size:13px;">
 					<%
@@ -129,7 +122,9 @@ $(document).ready(function(){
 						<div class="title"style="font-size:13px;"><a href="postContentPage.jsp?number=<%=rs.getString("number")%>"><%=rs.getString("title") %></a></div>
 						<div class="buttons" id="<%=rs.getString("id") %>">
 						<button id="<%=rs.getString("number") %>" class="like" name="like"><img width="15px" src="images/thumb-up-button.png"></button>
+						<%=rs.getString("likes") %>
 						<button id="<%=rs.getString("number") %>" class="star" name="star"><img width="15px" src="images/star.png"></button>
+						<%=rs.getString("bookmarks") %>
 						</div>
 						<div class="content" style="font-size:13px;">
 						<%
