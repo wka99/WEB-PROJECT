@@ -32,7 +32,7 @@
 				<td><img src="images/ds.jpg" width="200px" height="170px"></td>				
     		</tr>
     		<tr>
-    			<td height="10px">제목1</td>
+    			<td height="10px"><a href="postContentPage.jsp">제목1</a></td>
 				<td height="10px">제목2</td>
 				<td height="10px">제목3</td>			
     		</tr>

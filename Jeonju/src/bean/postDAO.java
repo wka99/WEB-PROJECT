@@ -4,9 +4,9 @@ public class postDAO {
 	private Connection conn;
 	public postDAO() {
 		try {
-			String dbURL="jdbc:mysql://localhost:3306/webbabies?serverTimezone=UTC";
-			String dbID="root";
-			String dbPassword="skatksgkrtk9218!";
+			String dbURL="jdbc:mysql://13.125.136.38:3306/webbabies?serverTimezone=UTC";
+			String dbID="eshock";
+			String dbPassword="dnflrkWkddldi";
 			Class.forName("com.mysql.jdbc.Driver");
 			conn=DriverManager.getConnection(dbURL,dbID,dbPassword);
 		}catch(Exception e) {

@@ -1,3 +1,7 @@
+	.postContent{
+		background-color:black;
+		margin-left:200px;
+	}
 	#container{
 		width:1350px;
 		margin:0px auto;

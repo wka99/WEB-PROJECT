@@ -105,7 +105,7 @@ $(document).ready(function(){
 				<td><div class="table_content">
 					<div class="userID" align="left" style="font-size:14px;"><b><%=rs.getString("id") %></b></div>
 					<img src="images/ds.jpg" width="240px" height="180px"><br>
-					<div class="title"style="font-size:13px;"><%=rs.getString("title") %></div>
+					<div class="title"style="font-size:13px;"><a href="postContentPage.jsp?number=<%=rs.getString("number")%>"><%=rs.getString("title") %></a></div>
 					<div class="buttons">
 					<button class="like" id="<%=rs.getString("number") %>" name="like" ><img width="15px" src="images/thumb-up-button.png"></button>
 					<button class="star" id="<%=rs.getString("number") %>" name="star"><img width="15px" src="images/star.png"></button>
@@ -127,7 +127,7 @@ $(document).ready(function(){
 	    				<td><div class="table_content">
 						<div class="userID" align="left" style="font-size:14px;"><b><%=rs.getString("id") %></b></div>
 						<img src="images/ds.jpg" width="240px" height="180px"><br>
-						<div class="title"style="font-size:13px;"><%=rs.getString("title") %></div>
+						<div class="title"style="font-size:13px;"><a href="postContentPage.jsp?number=<%=rs.getString("number")%>"><%=rs.getString("title") %></a></div>
 						<div class="buttons" id="<%=rs.getString("id") %>">
 						<button id="<%=rs.getString("number") %>" class="like" name="like"><img width="15px" src="images/thumb-up-button.png"></button>
 						<button id="<%=rs.getString("number") %>" class="star" name="star"><img width="15px" src="images/star.png"></button>
