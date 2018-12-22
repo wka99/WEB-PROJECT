@@ -1,6 +1,10 @@
 	.postContent{
-		background-color:black;
+		background-color:white;
+		margin-top:100px;
 		margin-left:200px;
+	}
+	.pc{
+		width:500px;
 	}
 	#container{
 		width:1350px;

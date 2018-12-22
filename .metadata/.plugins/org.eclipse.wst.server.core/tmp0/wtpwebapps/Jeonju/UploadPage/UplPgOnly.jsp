@@ -12,6 +12,7 @@
     <img id="새로운 글쓰기" src="images/writing.png" width="40px" height="40px">&nbsp&nbsp새로운 글쓰기</img>
         <div class="ALL_wrap">
                 <div class="upload_wrap">
+                	<input type="hidden" name="userName" value="<%=session.getAttribute("userName")%>">
                     <div id="photo-zone">
                         <img id="box" src="images/X-box.png">
                         <input type="hidden" id="box1" name="box_all" value="" src="" display="none">

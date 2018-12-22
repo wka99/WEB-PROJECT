@@ -14,7 +14,7 @@
 <body>
 <%
 	request.setCharacterEncoding("UTF-8");
-	String id=null;
+	String id=request.getParameter("userName");
 	String Title=request.getParameter("title");
 	String Content=request.getParameter("content");
 	String location=request.getParameter("location");

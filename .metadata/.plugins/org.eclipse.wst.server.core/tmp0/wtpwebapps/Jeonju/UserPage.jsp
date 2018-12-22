@@ -89,14 +89,13 @@ $(document).ready(function(){
     			String search=request.getParameter("search");
     			//나중에 아이디에 해당하는 게시글만 가져오기 위해 세션의 현재 사용자의 아이디를 확인하고 이와 일치하는
     			//게시글 만을 가져오도록 sql 조정할것!!
-    			//String id=(String)session.getAttribute("id");
     			int count=0;
     			ResultSet rs=null;
     			String sql="";
     			if (search==null)
-    				sql="select * from post";
+    				sql="select * from post where id='"+session.getAttribute("userName")+"'";
     			else
-    				sql="select * from post where content like '%"+search+"%' or title like'%"+search+"%'";
+    				sql="select * from post where (content like '%"+search+"%' or title like'%"+search+"%') and id='"+session.getAttribute("userName")+"'";
     			rs=pd.getResult(sql);
     			while(rs.next()){
     				count++;

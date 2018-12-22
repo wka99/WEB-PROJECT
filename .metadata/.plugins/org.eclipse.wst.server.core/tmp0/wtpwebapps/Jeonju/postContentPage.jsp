@@ -29,8 +29,8 @@
     				<td colspan="2"><h1 align="center"><%=rs.getString("title") %></h1></td>
     			</tr>
     			<tr>
-    				<td align="center"><%=rs.getString("id") %></td>
-    				<td align="center">[<%=rs.getString("location")%>&nbsp;-&nbsp;<%=rs.getString("living")%>]</td>
+    				<td align="left"><b><%=rs.getString("id") %></b></td>
+    				<td align="right">[<%=rs.getString("location")%>&nbsp;-&nbsp;<%=rs.getString("living")%>]</td>
     			</tr>
     			<tr>
     				<td colspan="2" align="center"><hr><br><%=rs.getString("content")%></td>

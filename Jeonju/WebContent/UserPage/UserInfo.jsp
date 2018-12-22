@@ -10,7 +10,7 @@
 	<nav class="UserInfo">
     	<br><br>
     	<img id="userImg" src="images/user.png" width="80px" height="80px"></img>
-    	<br><p align="center">User1234</p><br></a>
+    	<br><p align="center"><%=session.getAttribute("userName") %></p><br></a>
 	<div class="menu">
     	<img id="usermenuimg" src="images/paper.png"></img>
     	<a href="UserPage.jsp"><span>&nbsp;내가 쓴 글</span><br></a>

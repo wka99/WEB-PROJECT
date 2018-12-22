@@ -12,7 +12,7 @@ public class postDAO {
 		}catch(Exception e) {
 			System.out.println("DB연동 오류입니다 : "+e.getMessage());
 		}
-	} 
+	}
 	public ResultSet getResult(String sql) {
 		ResultSet rs=null;
 		try {
