@@ -20,7 +20,9 @@
     	<img id="usermenuimg" src="images/bookmark-ribbon.png"></img>
     	<a href="UserPage3.jsp"><span>&nbsp;내가 스크랩한 글</span><br></a>
     	<img id="usermenuimg" src="images/star.png"></img>
-    	<a href="UserPage4.jsp"><span>&nbsp;내가 즐겨찾기한 지역</span></a>
+    	<a href="UserPage4.jsp"><span>&nbsp;내가 즐겨찾기한 지역</span></a><br>
+    	<a href="checkModi.jsp"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 회원 정보 수정</span></a><br>
+    	<a href="checkDelete.jsp"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 회원 탈퇴</span></a>
 	</div>
     </nav>
 </body>

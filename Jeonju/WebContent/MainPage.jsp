@@ -74,7 +74,7 @@
  	<a href="UserPage4.jsp"><div class="login_list_common">즐겨찾기</div></a><br>
  	<a href="UserPage.jsp"><div class="login_list_common">내가 쓴 글</div></a><br>
  	<a href="UploadPage.jsp"><div class="login_list_common">게시글 쓰기</div></a><br>
- 	<a href="logoutAction.jsp"><div class="login_list_common">로그아웃</div></a>
+ 	<a href="logoutAction.jsp"><div class="login_list_common">로그아웃</div></a><br>
  </div>
  <%
 	}

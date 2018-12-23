@@ -1,6 +1,6 @@
 	.postContent{
 		background-color:white;
-		margin-top:100px;
+		margin-top:50px;
 		margin-left:200px;
 	}
 	.pc{
@@ -19,6 +19,16 @@
     }
     li.h{
     	float:left;
+    }
+    li.login{
+    	float:right;
+    }
+    li.login a.login{
+    	display:block;
+    	color:white;
+    	text-align:center;
+    	padding:20px;
+    	text-decoration:none;
     }
     li.h a.h{
     	display:block;
@@ -188,9 +198,13 @@
     .menu a{color:black;text-decoration:none;}
     header a{color:white;text-decoration:none;}
     .bigMenu{margin-left:20px; margin-top:30px;}
+    .ranking{width:490px; height:800px; overflow:auto;}
     .myPost,.bookmark_posts,.mylikePost{width:800px; height:500px; margin-left:100px; overflow:auto; background-color:#b0b0b0;}
     #user-table,#bookmark-table,#user-like-table{margin:0 auto;text-align:center;border-collapse:collapse;width:710px;
                  background-color:white;}
-    #user-table td,#bookmark-table td{padding:5px;vertical-align:top;}
+    #user-table td,#user-like-table td,#bookmark-table td{padding:5px;vertical-align:top;}
+    #user-table2{margin:0 auto;text-align:center;border-collapse:collapse;width:350px;
+                 background-color:white;}
+    #user-table2 td{padding:0px;vertical-align:top;}
     .table_content{width:238px;}
     button.like,button.star{width:30px; height:30px; background-color:white; border:none; cursor:pointer;}

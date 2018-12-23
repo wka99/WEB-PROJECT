@@ -8,18 +8,18 @@
 <link rel="stylesheet" type="text/css" href="css/uploadPage.css">
 </head>
 <body>
-<form action="UploadPage/upload.jsp" method="post">
+<form action="UploadPage/upload.jsp" method="post" enctype="multipart/form-data">
     <img id="새로운 글쓰기" src="images/writing.png" width="40px" height="40px">&nbsp&nbsp새로운 글쓰기</img>
         <div class="ALL_wrap">
                 <div class="upload_wrap">
-                	<input type="hidden" name="userName" value="<%=session.getAttribute("userName")%>">
+                   <input type="hidden" name="userName" value="<%=session.getAttribute("userName")%>">
                     <div id="photo-zone">
                         <img id="box" src="images/X-box.png">
-                        <input type="hidden" id="box1" name="box_all" value="" src="" display="none">
-                        <input type="hidden" id="box2" name="box_all" value="" src="" display="none">
-                        <input type="hidden" id="box3" name="box_all" value="" src="" display="none">
-                        <input type="hidden" id="box4" name="box_all" value="" src="" display="none">
-                        <input type="hidden" id="box5" name="box_all" value="" src="" display="none">
+                        <img id="box1" name="box_all" src="" display="none">
+                        <img id="box2" name="box_all" src="" display="none">
+                        <img id="box3" name="box_all" src="" display="none">
+                        <img id="box4" name="box_all" src="" display="none">
+                        <img id="box5" name="box_all" src="" display="none">
                     </div>
                     <div id="select-zone1">
                         <img id="small_1" src="" display="none" onclick=select_small(1)>
@@ -59,7 +59,7 @@
                 <div class="canvas_wrap" >
                     <div id=canvas_head_wrap>
                         <label for="Uploading"><img src="images/picture.png"></label>
-                        <input type="file" id="Uploading">
+                        <input multiple="multiple" type="file" id="Uploading" name="file">
                     </div>
                     <div id="title_wrapper">
                         <input name="title" type="text" placeholder="제목을 입력하세요.">

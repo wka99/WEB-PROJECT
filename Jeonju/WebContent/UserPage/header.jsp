@@ -18,7 +18,14 @@
 			</ul>
 		</li>
 		<li class="h"><a class="h" href="AajPage.jsp">All about Jeonju</a></li>
-		<li class="h"><a class="h" href="AllContent.jsp">전체 글 보기</a>
+		<li class="h"><a class="h" href="AllContent.jsp">전체 글 보기</a></li>
+		<%if(session.getAttribute("userEmail")==null){ %>
+		<li class="login"><a class="login" href="login.jsp">로그인</a></li>
+		<%} %>
+		<%if(session.getAttribute("userEmail")!=null){ %>
+		<li class="login"><a class="login" href="logoutAction.jsp">로그아웃</a></li>
+		<li class="login"><a class="login" href="UserPage.jsp"><%=session.getAttribute("userName")%>님</a></li>
+		<%} %>
 	</ul>
 </body>
 </html>

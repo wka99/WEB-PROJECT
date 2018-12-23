@@ -6,6 +6,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Jua&amp;subset=korean" rel="stylesheet">
+<style> #container{font-family: "jua", sans-serif;}</style>
 <meta content="text/html" charset="utf-8">
 <script type="text/javascript">
    $(document).ready(function() {
@@ -13,7 +15,6 @@
          e.preventDefault();
          var title = $(this).attr("title");
          window.location.href = encodeURI("detail.jsp?title=" + title);
-
       })
    });
 </script>
@@ -22,13 +23,13 @@
 <link rel="stylesheet" type="text/css" href="css/NewFile.css">
 </head>
 <body>
-   <div id="container">
+   <div id="container" >
       <jsp:include page="UserPage/header.jsp" flush="false" />
-      <div id="map" style="width: 600px; float: left;">
-         <h1 style="text-align: center">관심있는 지역을 눌러보세요!</h1>
+      <div id="map" style="width:500px; float: left;">
+         <h1 style="text-align: center; nanumgothiccoding ">관심있는 지역을 눌러보세요!</h1>
 
-         <img src='images/map.jpg' align="left" border="0" alt=""
-            usemap="#Map">
+         <img src='images/map.jpg' align="left" 
+            usemap="#Map" >
          <map name="Map">
             <area class="map" target="_self" title="효자동1가" data-id="1" href=""
                coords="378,425,440,440" shape="rect" />
@@ -40,9 +41,11 @@
          </map>
 
       </div>
-      <div id="content" style="background-color: white; float: center;">
+      <div id="content" style="height:600px;float: right;">
          <h1 style="text-align: center">실시간 순위를 확인하세요!</h1>
-      
+         <div class="ranking">
+            <jsp:include page="aajpost.jsp"/>
+         </div>
       </div>
 </body>
 </html>

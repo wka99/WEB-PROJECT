@@ -5,6 +5,8 @@
 <%@page import="com.oreilly.servlet.MultipartRequest" %>
 <%@page import="java.util.Enumeration" %>
 <%@page import="file.uploadDB" %>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,24 +15,25 @@
 </head>
 <body>
 <%
-	request.setCharacterEncoding("UTF-8");
-	String id=request.getParameter("userName");
-	String Title=request.getParameter("title");
-	String Content=request.getParameter("content");
-	String location=request.getParameter("location");
-	String living=request.getParameter("living");
-	String []pictureNames=request.getParameterValues("box_all");
-
-	
-	String directory=application.getRealPath("/upload/");
-	int maxSize=1024*1024*100;
-	String encoding="UTF-8";
-
-	for(int i=0;i<pictureNames.length;i++){
-		out.write(i+": "+pictureNames[i]+"<br>");
-	}
-	new uploadDB().upload(id,Title,Content,location,living,pictureNames);
-	response.sendRedirect("../UserPage.jsp");
+   //String []pictureSrcs=multi.getParameterValues("box_all");
+   //System.out.println(pictureSrcs[0]);
+   request.setCharacterEncoding("UTF-8");
+   
+   String directory=application.getRealPath("/UploadFile/");
+   int maxSize=1024*1024*100;
+   String encoding="UTF-8";
+   MultipartRequest multi=new MultipartRequest(request,directory,maxSize,encoding,new DefaultFileRenamePolicy());
+   String id=multi.getParameter("userName");
+   String Title=multi.getParameter("title");
+   String Content=multi.getParameter("content");
+   String location=multi.getParameter("location");
+   String living=multi.getParameter("living");
+   
+   String fileName=multi.getFilesystemName("file");
+   
+   uploadDB udb=new uploadDB();
+   int number=udb.upload(id,Title,Content,location,living,fileName);
+   response.sendRedirect("../UserPage.jsp");
 %>
 </body>
 </html>

@@ -870,3 +870,12 @@
 0:0:0:0:0:0:0:1 - - [22/Dec/2018:22:33:40 +0900] "GET /Jeonju/postContentPage.jsp?number=1 HTTP/1.1" 200 2438
 0:0:0:0:0:0:0:1 - - [22/Dec/2018:22:33:41 +0900] "GET /Jeonju/AllContent.jsp HTTP/1.1" 200 9925
 0:0:0:0:0:0:0:1 - - [22/Dec/2018:22:33:43 +0900] "GET /Jeonju/MainPage.jsp HTTP/1.1" 200 2123
+127.0.0.1 - - [22/Dec/2018:22:36:24 +0900] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [22/Dec/2018:22:36:25 +0900] "GET /Jeonju/MainPage.jsp HTTP/1.1" 200 2123
+0:0:0:0:0:0:0:1 - - [22/Dec/2018:22:36:26 +0900] "GET /Jeonju/login.jsp HTTP/1.1" 200 2069
+0:0:0:0:0:0:0:1 - - [22/Dec/2018:22:36:34 +0900] "POST /Jeonju/loginAction.jsp HTTP/1.1" 200 287
+0:0:0:0:0:0:0:1 - - [22/Dec/2018:22:36:34 +0900] "GET /Jeonju/MainPage.jsp HTTP/1.1" 200 2550
+0:0:0:0:0:0:0:1 - - [22/Dec/2018:22:36:37 +0900] "GET /Jeonju/UserPage.jsp HTTP/1.1" 200 6282
+0:0:0:0:0:0:0:1 - - [22/Dec/2018:22:36:42 +0900] "GET /Jeonju/AllContent.jsp HTTP/1.1" 200 9905
+0:0:0:0:0:0:0:1 - - [22/Dec/2018:22:37:01 +0900] "GET /Jeonju/UserPage.jsp HTTP/1.1" 200 6282
+0:0:0:0:0:0:0:1 - - [22/Dec/2018:22:37:07 +0900] "GET /Jeonju/MainPage.jsp HTTP/1.1" 200 2550

@@ -18,7 +18,7 @@ private ResultSet rs;
 
 public UserDAO() {
    try {
-      String dbURL="jdbc:mysql://13.125.136.38:3306/webbabies?serverTimezone=UTC"/*"jdbc:mysql://localhost:3306/BBS?serverTimezone=UTC"*/;
+      String dbURL="jdbc:mysql://localhost:3306/webbabies?serverTimezone=UTC"/*"jdbc:mysql://localhost:3306/BBS?serverTimezone=UTC"*/;
       String dbEmail="eshock";
       String dbPassword="dnflrkWkddldi";
       Class.forName("com.mysql.jdbc.Driver")/*("com.mysql.cj.jdbc.Driver")*/; //드라이버에 접속할 수 있도록
@@ -82,5 +82,59 @@ public int join(User user) {
    }
    return -1;
 }
+//회원확인 확인
+public int DoubleCheck (String userEmail, String userPassword) {
+	String userName="", useremail="", userpassword="", userAddress="", userAge="";
+	try { 
+		String SQL="select * from user where userEmail=\""+userEmail+"\"";
+		pstmt=conn.prepareStatement(SQL);
+		rs=pstmt.executeQuery();
+		 
+		while(rs.next()) {
+			userName=rs.getString("userName");
+			useremail=rs.getString("userEmail");
+			userpassword=rs.getString("userPassword");
+			userAddress=rs.getString("userAddress");
+			userAge=rs.getString("userAge");
+		}
+	}
+	catch(Exception e) {
+		e.printStackTrace();
+	}
+	//이메일이나 비밀번호 잘못 누른 경우
+	if(!userPassword.equals(userpassword) || !userEmail.equals(useremail))
+		return 0; 
+	
+	//이메일이랑 비밀번호 잘 누른경우
+	else 
+	return 1;
+	
+}
+//회원탈퇴
+public void out(String userEmail ,String userPassword) {
+		//삭제
+		try {
+			 String SQL="delete from user where userEmail=\""+userEmail+"\"";
+			 pstmt=conn.prepareStatement(SQL);
+			 pstmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+} 
 
+
+//회원정보 수정
+public void modifyInfo (String userName, String userEmail, String userPassword, String userAddress, String userAge)
+{
+	try {		
+		 String SQL="update user set userName= '"+userName+"', userEmail='"+userEmail+"', userPassword='"+userPassword+
+				 "', userAddress='"+userAddress+"', userAge='"+userAge+"' where userEmail=\""+userEmail+"\"";
+		 pstmt=conn.prepareStatement(SQL);
+			pstmt.executeUpdate();
+	}catch(Exception e) {
+		e.printStackTrace();
+	}
+	
+}
 }
