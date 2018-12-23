@@ -18,7 +18,7 @@ private ResultSet rs;
 
 public UserDAO() {
    try {
-      String dbURL="jdbc:mysql://localhost:3306/webbabies?serverTimezone=UTC"/*"jdbc:mysql://localhost:3306/BBS?serverTimezone=UTC"*/;
+      String dbURL="jdbc:mysql://13.125.136.38:3306/webbabies?serverTimezone=UTC"/*"jdbc:mysql://localhost:3306/BBS?serverTimezone=UTC"*/;
       String dbEmail="eshock";
       String dbPassword="dnflrkWkddldi";
       Class.forName("com.mysql.jdbc.Driver")/*("com.mysql.cj.jdbc.Driver")*/; //드라이버에 접속할 수 있도록

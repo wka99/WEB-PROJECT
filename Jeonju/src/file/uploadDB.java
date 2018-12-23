@@ -13,7 +13,7 @@ public class uploadDB {
    private Statement stmt=null;
    public uploadDB() {
       try {
-         String dbURL="jdbc:mysql://localhost:3306/webbabies?serverTimezone=UTC";
+         String dbURL="jdbc:mysql://13.125.136.38:3306/webbabies?serverTimezone=UTC";
          String dbID="eshock";
          String dbPassword="dnflrkWkddldi";
          Class.forName("com.mysql.cj.jdbc.Driver");
